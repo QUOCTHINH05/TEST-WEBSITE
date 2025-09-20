@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Học từ vựng</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="learn.js"></script>
+</head>
+<body>
+    <header>Học từ vựng</header>
+    <div id="word-card">
+        <div class="flashcard" id="flashcard" onclick="flipCard()">
+            <div class="flashcard-face front" id="card-front">Từ</div>
+            <div class="flashcard-face back" id="card-back">Nghĩa</div>
+        </div>
+        <button onclick="speakWord(currentWords[currentIndex].word)">🔊 Nghe lại</button>
+        <button onclick="nextWord()">Từ tiếp theo</button>
+    </div>
+    
+    <div id="quiz-section">
+        <div id="quiz-question"></div>
+        <div id="quiz-options"></div>
+    </div>
+
+    <div id="quiz-result">
+        <p id="quiz-score"></p>
+        <button id="backBtn" onclick="goBack()">Quay lại trang chủ</button>
+    </div>
+</body>
+</html>

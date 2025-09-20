@@ -1,0 +1,93 @@
+h1, h2, h3, header {
+  font-family: 'Rubik', sans-serif;
+}
+
+body, p, label, input, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f9f7f1;
+    margin: 10;
+    padding: 0;
+}
+
+/* Căn chỉnh phần header chứa tiêu đề và nút */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f4eb2;
+    color: white;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.header-container h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.header-container h3 {
+    margin: 0;
+    text-align: center;
+    color: #c0eb6a;
+    font-weight: lighter;
+}
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #c0eb6a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: 600;
+}
+
+select, input[type=number] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+        }
+#startLearning {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#startLearning:hover {
+    background-color: #303f9f;
+}
+
+/* Nút đăng xuất */
+.logout-btn {
+    width: 10%;
+    padding: 10px;
+    background-color: white;
+    color: #3f51b5;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: pink;
+}

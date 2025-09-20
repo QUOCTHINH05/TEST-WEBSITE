@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Học từ vựng tiếng Anh theo chủ đề</h1>
+            <h3>Chào mừng bạn đã quay trở lại !</h2>
+            <button class="logout-btn">Đăng xuất</button>
+        </div>
+    </header>
+
+    <hr>
+    <main>
+        <form id="vocabForm" onsubmit="return startLearning();">
+            <label for="topic">Chọn chủ đề học:</label>
+            <select id="topic" name="topic" required>
+                <option value="" disabled selected>-- Chọn chủ đề --</option>
+                <option value="animals">Động vật</option>
+                <option value="colors">Màu sắc</option>
+                <option value="weather">Thời tiết</option>
+                <option value="food">Thức ăn</option>
+                <option value="sports">Thể thao</option>
+            </select>
+
+            <label for="numWords">Số lượng từ vựng muốn học:</label>
+            <input type="number" id="numWords" name="numWords" min="5" max="20" placeholder="Chọn hoặc nhập số lượng" required />
+            
+            <button type="submit" id="startLearning">Bắt đầu học ngay</button>
+        </form>
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>
